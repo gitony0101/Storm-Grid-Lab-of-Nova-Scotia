@@ -16,7 +16,7 @@ The public repository includes only the data files needed to run the demo and un
 - `model_validation_status.json` — validation position and evidence
 - `model_weight_profiles.json` — weight profile definitions
 - `ns_frontend_map_points.json` — Nova Scotia diagnostic map data
-- `rankings_metrics.json` — ranking diagnostic metrics
+- `ranking_metrics.json` — ranking diagnostic metrics
 - `risk_calibration_bins.json` — score band distribution
 - `ablation_metrics.json` — component ablation diagnostics
 
