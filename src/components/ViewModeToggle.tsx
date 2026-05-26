@@ -6,24 +6,27 @@ interface ToggleProps {
 
 export default function ViewModeToggle({ viewMode, setViewMode }: ToggleProps) {
   return (
-    <div className="flex space-x-2 mb-2">
+    <div className="flex flex-wrap items-center gap-2">
       <button
+        type="button"
         onClick={() => setViewMode('ns')}
-        className={`px-3 py-1 text-xs rounded ${viewMode === 'ns' ? 'bg-gray-800 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
+        className={`px-3 py-1.5 text-xs font-bold rounded ${viewMode === 'ns' ? 'bg-gray-800 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
       >
         NS Overview
       </button>
       <button
+        type="button"
         onClick={() => setViewMode('county')}
-        className={`px-3 py-1 text-xs rounded ${viewMode === 'county' ? 'bg-gray-800 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
+        className={`px-3 py-1.5 text-xs font-bold rounded ${viewMode === 'county' ? 'bg-gray-800 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
       >
-        County Drill-down
+        HRM Communities
       </button>
       <button
+        type="button"
         onClick={() => setViewMode('action')}
-        className={`px-3 py-1 text-xs rounded ${viewMode === 'action' ? 'bg-gray-800 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
+        className={`px-3 py-1.5 text-xs font-bold rounded ${viewMode === 'action' ? 'bg-gray-800 text-white' : 'bg-white text-gray-700 border border-gray-300'}`}
       >
-        Action Plan
+        Halifax Action View
       </button>
     </div>
   );

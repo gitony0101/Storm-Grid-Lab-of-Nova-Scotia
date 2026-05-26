@@ -466,6 +466,11 @@ export default function NovaScotiaOverview({
           className="bg-white/90 backdrop-blur rounded-lg px-3 py-2 text-xs text-gray-700 max-w-sm shadow"
         >
           <p className="font-semibold mb-1">Nova Scotia Diagnostic Overview</p>
+          {mode === 'overview' && (
+            <p className="text-[11px] font-semibold text-gray-800 mb-1">
+              Nova Scotia Diagnostic Overview. Display-only diagnostic context. Active scoring and validation focus on HRM community triage.
+            </p>
+          )}
           <p className="text-[11px] text-gray-500">
             {mode === 'county'
               ? 'County drill-down shows selected county communities from the available provincial diagnostic layer.'

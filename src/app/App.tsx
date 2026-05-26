@@ -11,6 +11,7 @@ import type { ScenarioDeploymentRecommendations } from '../engine/deploymentEngi
 import NovaScotiaOverview from '../components/NovaScotiaOverview';
 import HrmCommunityView from '../components/HrmCommunityView';
 import HrmCommunityTopPanel from '../components/HrmCommunityTopPanel';
+import ViewModeToggle from '../components/ViewModeToggle';
 import VisiblePriorityCommunitiesPanel, {
   type VisiblePriorityCommunity,
 } from '../components/VisiblePriorityCommunitiesPanel';
@@ -37,6 +38,8 @@ type DynamicNsMapPoint = NsMapPoint & {
   dynamic_score: number;
   display_priority_band: string;
 };
+
+type ViewMode = 'ns' | 'county' | 'action';
 
 function isHrmCounty(county: string | null): boolean {
   return county === 'Halifax' || county === 'HRM';
@@ -85,7 +88,8 @@ export default function App() {
   });
   const [activeScenario, setActiveScenario] = useState<string | null>('normal');
   const [selectedCommunity, setSelectedCommunity] = useState<string | null>(null);
-  const [selectedCounty, setSelectedCounty] = useState<string | null>('Halifax');
+  const [selectedCounty, setSelectedCounty] = useState<string | null>(null);
+  const [viewMode, setViewModeState] = useState<ViewMode>('ns');
   const [nsPoints, setNsPoints] = useState<NsMapPoint[]>([]);
   const [visiblePriorityCommunities, setVisiblePriorityCommunities] = useState<VisiblePriorityCommunity[]>([]);
   const [focusedCommunityId, setFocusedCommunityId] = useState<string | null>(null);
@@ -201,6 +205,31 @@ export default function App() {
     setVisiblePriorityCommunities(communities);
   }, []);
 
+  const setViewMode = useCallback((mode: ViewMode) => {
+    setViewModeState(mode);
+    setSelectedCommunity(null);
+    setFocusedCommunityId(null);
+
+    if (mode === 'ns') {
+      setSelectedCounty(null);
+      return;
+    }
+
+    setSelectedCounty('Halifax');
+  }, []);
+
+  const handleSelectCounty = useCallback((county: string | null) => {
+    setSelectedCounty(county);
+    setSelectedCommunity(null);
+    setFocusedCommunityId(null);
+
+    if (isHrmCounty(county)) {
+      setViewModeState('county');
+    } else {
+      setViewModeState('ns');
+    }
+  }, []);
+
   const handleScenarioSelect = (key: string, scenario: StormInput) => {
     setActiveScenario(key);
     setStorm({
@@ -215,6 +244,7 @@ export default function App() {
     setSelectedCounty(null);
     setSelectedCommunity(null);
     setFocusedCommunityId(null);
+    setViewModeState('ns');
   };
 
   useEffect(() => {
@@ -252,26 +282,32 @@ export default function App() {
       </div>
 
       <div className="flex-1 flex overflow-hidden relative">
-        <div className="flex-1 relative">
-          {isHrmCounty(selectedCounty) ? (
-            <HrmCommunityView
-              communities={adjustedCommunities}
-              selectedCommunity={selectedCommunity}
-              onSelectCommunity={setSelectedCommunity}
-            />
-          ) : (
-            <NovaScotiaOverview
-              activeScenario={activeScenario}
-              stormInputs={storm}
-              mode={selectedCounty ? 'county' : 'overview'}
-              selectedCounty={selectedCounty}
-              focusedCommunityId={focusedCommunityId}
-              onSelectCounty={setSelectedCounty}
-              onVisiblePriorityCommunitiesChange={handleVisiblePriorityCommunitiesChange}
-            />
-          )}
-          <div className="absolute bottom-3 left-3 z-[1000]">
-            <Legend />
+        <div className="flex-1 min-w-0 flex flex-col bg-gray-100">
+          <div className="flex-shrink-0 border-b border-gray-200 bg-white px-4 py-2 shadow-sm z-[1001]">
+            <ViewModeToggle viewMode={viewMode} setViewMode={setViewMode} />
+          </div>
+
+          <div className="flex-1 min-h-0 relative">
+            {viewMode === 'ns' ? (
+              <NovaScotiaOverview
+                activeScenario={activeScenario}
+                stormInputs={storm}
+                mode={selectedCounty ? 'county' : 'overview'}
+                selectedCounty={selectedCounty}
+                focusedCommunityId={focusedCommunityId}
+                onSelectCounty={handleSelectCounty}
+                onVisiblePriorityCommunitiesChange={handleVisiblePriorityCommunitiesChange}
+              />
+            ) : (
+              <HrmCommunityView
+                communities={adjustedCommunities}
+                selectedCommunity={selectedCommunity}
+                onSelectCommunity={setSelectedCommunity}
+              />
+            )}
+            <div className="absolute bottom-3 left-3 z-[1000]">
+              <Legend />
+            </div>
           </div>
         </div>
 
