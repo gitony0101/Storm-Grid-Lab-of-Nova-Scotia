@@ -35,7 +35,7 @@ Excluded groups:
 - Restricted diagnostic data: `ns_community_storm_training.csv`, `community_storm_training.csv`, `ns_tabpfn_benchmark_results.json`, and old `ns_ml3*`, `ns_ml5*`, and `ns_ml6*` outputs.
 - Raw private review notes, local evidence scratch files, chat-history exports, and machine-specific metadata.
 
-## 5. AI-Related Scan Result
+## 5. Public Artifact Scan Result
 
 The public source scan found no raw chat-history files, private review transcripts, or automation scratch files.
 

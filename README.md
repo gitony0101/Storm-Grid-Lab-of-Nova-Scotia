@@ -53,6 +53,10 @@ Advanced ML challengers were explored offline, but the production demo retained 
 - Top-K and NDCG evidence help evaluate ranking behavior but do not establish operational readiness.
 - Same-source bias and small sample size remain material limitations.
 
+## Data Policy
+
+This repository keeps only lightweight runtime data required to run and understand the demo. Large raw GIS caches, archived experiment outputs, and restricted diagnostic artifacts are excluded from the public repository. See `docs/portfolio/DATA_MANIFEST.md`.
+
 ## How To Run Locally
 
 Install dependencies only if they are not already present in your local clone:
