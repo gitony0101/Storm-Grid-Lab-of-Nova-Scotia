@@ -1,4 +1,4 @@
-# StormGrid
+# StormGrid Lab
 
 StormGrid is a Hack the Elements hackathon project built to rank communities for storm response priority under sparse data.
 
