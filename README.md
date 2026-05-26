@@ -1,5 +1,10 @@
 # StormGrid Lab
 
+## Live Demo
+
+[Open the live demo](https://storm-grid-lab-of-nova-scotia.vercel.app/)
+
+
 StormGrid ranks HRM communities for storm response priority using a transparent weighted scoring model and sparse public data. Built for the Hack the Elements hackathon (May 2026, ShiftKey Labs).
 
 ## Demo Screenshot
