@@ -1,0 +1,64 @@
+{
+  "metadata": {
+    "generated_at": "2026-06-15T12:00:00Z",
+    "limitation": "Community centroid proxy, not official polygon boundary.",
+    "note": "Replay hazard inputs are scenario-based approximations of named storm events, not measured GIS or weather-station observations. Values represent plausible storm severity profiles for validation of the triage ranking model, not exact historical meteorological data."
+  },
+  "storm_events": [
+    {
+      "storm_event_id": "post-tropical-fiona-2023",
+      "label": "Post-Tropical Fiona (Sep 2023)",
+      "window_start": "2023-09-24T00:00:00Z",
+      "window_end": "2023-09-25T12:00:00Z",
+      "wind_score": 0.90,
+      "rain_score": 0.70,
+      "tide_score": 0.85,
+      "duration_score": 0.80,
+      "description": "Scenario replay of Post-Tropical Fiona: extreme wind impact with prolonged duration and high coastal surge. Highest expected outage risk across wind-exposed communities."
+    },
+    {
+      "storm_event_id": "post-tropical-derry-2019",
+      "label": "Post-Tropical Derry (Jul 2019)",
+      "window_start": "2019-07-14T00:00:00Z",
+      "window_end": "2019-07-15T06:00:00Z",
+      "wind_score": 0.70,
+      "rain_score": 0.40,
+      "tide_score": 0.50,
+      "duration_score": 0.60,
+      "description": "Scenario replay of Post-Tropical Derry: strong wind core with moderate rain. Expected to impact tree-exposure and coastal communities more severely than rain-driven ones."
+    },
+    {
+      "storm_event_id": "winter-storm-2024",
+      "label": "Winter Storm Heavy Rain (Jan 2024)",
+      "window_start": "2024-01-03T00:00:00Z",
+      "window_end": "2024-01-04T00:00:00Z",
+      "wind_score": 0.40,
+      "rain_score": 0.80,
+      "tide_score": 0.65,
+      "duration_score": 0.70,
+      "description": "Scenario replay of a heavy rain / moderate wind winter event. Expected to highlight lowland-exposure and coastal flooding communities over wind-vulnerable ones."
+    },
+    {
+      "storm_event_id": "summer-squall-2022",
+      "label": "Summer Squall (Aug 2022)",
+      "window_start": "2022-08-10T00:00:00Z",
+      "window_end": "2022-08-10T12:00:00Z",
+      "wind_score": 0.35,
+      "rain_score": 0.55,
+      "tide_score": 0.20,
+      "duration_score": 0.30,
+      "description": "Scenario replay of a short-duration summer squall. Expected to produce lower overall risk scores, useful for testing low-risk ranking behavior."
+    },
+    {
+      "storm_event_id": "coastal-nor-easter-2021",
+      "label": "Coastal Nor'easter (Oct 2021)",
+      "window_start": "2021-10-24T00:00:00Z",
+      "window_end": "2021-10-26T00:00:00Z",
+      "wind_score": 0.60,
+      "rain_score": 0.75,
+      "tide_score": 0.90,
+      "duration_score": 0.85,
+      "description": "Scenario replay of a prolonged coastal Nor'easter with high tide and sustained rain. Expected to elevate coastal-exposure communities in the top-K."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "model_version": "stormgrid-layered-model-v1.0.0",
+  "limitation_text": "StormGrid ranks communities for storm response priority under sparse data. All outputs are decision-support, not validated operational forecasts. StormGrid does not replace human judgment. StormGrid is not outage prediction. All new feature layers are seed_proxy pending human review.",
+  "allowed_claims": [
+    "StormGrid ranks communities for storm response priority under sparse data.",
+    "StormGrid combines storm pressure, vulnerability, exposure interactions, and action priority factors.",
+    "StormGrid helps emergency teams decide where to look first.",
+    "StormGrid is a multi-layer decision-support system.",
+    "StormGrid has a proxy-validation pipeline against historical aggregates.",
+    "StormGrid does not replace human judgment.",
+    "StormGrid is not outage prediction.",
+    "StormGrid uses physically-causal feature design rather than purely statistical correlations.",
+    "StormGrid operates under a small-sample regime with limited storm data.",
+    "StormGrid is intended for pre-storm triage planning conversations."
+  ],
+  "blocked_claims": [
+    {
+      "claim": "predicts outages",
+      "reason": "No outage probability model exists",
+      "alternative": "Ranks communities for response priority"
+    },
+    {
+      "claim": "outage probability",
+      "reason": "Not a probabilistic model",
+      "alternative": "Scores relative to others"
+    },
+    {
+      "claim": "validated outage forecast",
+      "reason": "No observed multi-storm validation done",
+      "alternative": "Proxy-validated ranking tool"
+    },
+    {
+      "claim": "province-wide deployable outage model",
+      "reason": "No real-time deployment exists",
+      "alternative": "Province-scale triage framework"
+    },
+    {
+      "claim": "100 percent accurate",
+      "reason": "No accuracy claim is possible",
+      "alternative": "Best available approach under sparse data"
+    },
+    {
+      "claim": "life-saving prediction accuracy",
+      "reason": "Cannot make outcome guarantees",
+      "alternative": "Triage guidance for response planning"
+    },
+    {
+      "claim": "household-level prediction",
+      "reason": "Community is minimum unit",
+      "alternative": "Community-level ranking"
+    },
+    {
+      "claim": "pole-level prediction",
+      "reason": "No asset-level data in model",
+      "alternative": "Community-level triage"
+    },
+    {
+      "claim": "operational forecast",
+      "reason": "No real-time weather integration",
+      "alternative": "Scenario-based decision support"
+    },
+    {
+      "claim": "dispatching communities",
+      "reason": "Produces recommendations, not commands",
+      "alternative": "Recommended actions for human review"
+    },
+    {
+      "claim": "proven emergency model",
+      "reason": "No real-storm operational validation",
+      "alternative": "Research-phase decision-support tool"
+    },
+    {
+      "claim": "directly validated against storm impact",
+      "reason": "Proxy-only validation",
+      "alternative": "Validated against historical aggregate proxies"
+    }
+  ],
+  "mandatory_caveats": [
+    "StormGrid does not replace human judgment.",
+    "StormGrid is not outage prediction.",
+    "All validation is proxy-based.",
+    "All scores are provisional pending real-storm validation."
+  ],
+  "compliant_pitch_templates": {
+    "elevator": "StormGrid ranks Nova Scotia communities for storm response priority. It combines storm pressure, vulnerability, and action priority factors to help emergency teams decide where to look first. It is a triage tool, not a forecast system.",
+    "technical": "StormGrid is a multi-layer decision-support system for ranking 2,647 Nova Scotia communities by storm response priority. It freezes the accepted no_prior_triage_v1 risk score and layers on lifeline importance, actionability, and confidence scores. All weights are seed_proxy pending human review. All validation is proxy-based. Designed for pre-storm planning, not operational dispatch.",
+    "limitations": "StormGrid operates under sparse data from two major storms. All validation is against historical aggregates, not observed strike data. Lifeline and actionability layers are first-version seeds needing human review. Community boundaries are centroid-approximate. StormGrid is a research-phase triage framework, not a validated operational model."
+  },
+  "compliance_checklist": [
+    "All claims use 'ranks', 'scores', or 'triage' — not 'predicts'",
+    "No probabilistic or forecast framing",
+    "'Sparse data' context included",
+    "'Not outage prediction' caveat included",
+    "No accuracy percentages without stating 'proxy-based'",
+    "model_version referenced for the specific outputs shown",
+    "Limitation text included with all scored outputs",
+    "All new features labeled with source status",
+    "'Human-in-the-loop' or 'does not replace human judgment' included"
+  ]
+}

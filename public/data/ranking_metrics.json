@@ -1,0 +1,182 @@
+{
+  "model_version": "2.2.0",
+  "generated_at": "2026-05-17T23:37:35Z",
+  "diagnostic_only": true,
+  "primary_label": "storm_relative_top30_label",
+  "label_limitations": "Community centroid proxy, not official polygon boundary. Storm-relative labels are derived from per-community observed_outage_count which is a historical aggregate (storm-invariant for the current HRM replay set). Raw outage count conflates customer density, reporting density, infrastructure complexity, service footprint, and lifeline concentration. storm_relative_top30_label should be interpreted as a relative ranking prior, not a storm-specific outcome prediction. Label invariance across storms is a known data limitation pending per-storm outage decomposition.",
+  "metrics_by_storm": {
+    "coastal-nor-easter-2021": {
+      "storm_event_id": "coastal-nor-easter-2021",
+      "top3_capture_rate": 0.0,
+      "top3_hits": 0,
+      "top3_k": 3,
+      "top5_capture_rate": 0.2,
+      "top5_hits": 1,
+      "top5_k": 5,
+      "precision_at_3": 0.0,
+      "ndcg_at_5": 0.1461,
+      "spearman_rank": -0.6071,
+      "separation_score": -0.4167,
+      "top3_communities": [
+        "Musquodoboit Harbour",
+        "Sambro",
+        "Tantallon"
+      ],
+      "top5_communities": [
+        "Musquodoboit Harbour",
+        "Sambro",
+        "Tantallon",
+        "Spryfield",
+        "Fall River"
+      ]
+    },
+    "post-tropical-derry-2019": {
+      "storm_event_id": "post-tropical-derry-2019",
+      "top3_capture_rate": 0.0,
+      "top3_hits": 0,
+      "top3_k": 3,
+      "top5_capture_rate": 0.2,
+      "top5_hits": 1,
+      "top5_k": 5,
+      "precision_at_3": 0.0,
+      "ndcg_at_5": 0.1461,
+      "spearman_rank": -0.6357,
+      "separation_score": -0.4167,
+      "top3_communities": [
+        "Musquodoboit Harbour",
+        "Tantallon",
+        "Sambro"
+      ],
+      "top5_communities": [
+        "Musquodoboit Harbour",
+        "Tantallon",
+        "Sambro",
+        "Spryfield",
+        "Fall River"
+      ]
+    },
+    "post-tropical-fiona-2023": {
+      "storm_event_id": "post-tropical-fiona-2023",
+      "top3_capture_rate": 0.0,
+      "top3_hits": 0,
+      "top3_k": 3,
+      "top5_capture_rate": 0.2,
+      "top5_hits": 1,
+      "top5_k": 5,
+      "precision_at_3": 0.0,
+      "ndcg_at_5": 0.1461,
+      "spearman_rank": -0.6071,
+      "separation_score": -0.4167,
+      "top3_communities": [
+        "Musquodoboit Harbour",
+        "Tantallon",
+        "Sambro"
+      ],
+      "top5_communities": [
+        "Musquodoboit Harbour",
+        "Tantallon",
+        "Sambro",
+        "Spryfield",
+        "Fall River"
+      ]
+    },
+    "summer-squall-2022": {
+      "storm_event_id": "summer-squall-2022",
+      "top3_capture_rate": 0.0,
+      "top3_hits": 0,
+      "top3_k": 3,
+      "top5_capture_rate": 0.2,
+      "top5_hits": 1,
+      "top5_k": 5,
+      "precision_at_3": 0.0,
+      "ndcg_at_5": 0.1312,
+      "spearman_rank": -0.7036,
+      "separation_score": -0.4167,
+      "top3_communities": [
+        "Musquodoboit Harbour",
+        "Tantallon",
+        "Fall River"
+      ],
+      "top5_communities": [
+        "Musquodoboit Harbour",
+        "Tantallon",
+        "Fall River",
+        "Sambro",
+        "Spryfield"
+      ]
+    },
+    "winter-storm-2024": {
+      "storm_event_id": "winter-storm-2024",
+      "top3_capture_rate": 0.0,
+      "top3_hits": 0,
+      "top3_k": 3,
+      "top5_capture_rate": 0.2,
+      "top5_hits": 1,
+      "top5_k": 5,
+      "precision_at_3": 0.0,
+      "ndcg_at_5": 0.1461,
+      "spearman_rank": -0.6286,
+      "separation_score": -0.4167,
+      "top3_communities": [
+        "Musquodoboit Harbour",
+        "Sambro",
+        "Tantallon"
+      ],
+      "top5_communities": [
+        "Musquodoboit Harbour",
+        "Sambro",
+        "Tantallon",
+        "Spryfield",
+        "Fall River"
+      ]
+    }
+  },
+  "overall_metrics": {
+    "top3_capture_rate": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "std": 0.0
+    },
+    "top5_capture_rate": {
+      "mean": 0.2,
+      "min": 0.2,
+      "max": 0.2,
+      "std": 0.0
+    },
+    "precision_at_3": {
+      "mean": 0.0,
+      "min": 0.0,
+      "max": 0.0,
+      "std": 0.0
+    },
+    "ndcg_at_5": {
+      "mean": 0.1431,
+      "min": 0.1312,
+      "max": 0.1461,
+      "std": 0.006
+    },
+    "spearman_rank": {
+      "mean": -0.6364,
+      "min": -0.7036,
+      "max": -0.6071,
+      "std": 0.0355
+    },
+    "separation_score": {
+      "mean": -0.4167,
+      "min": -0.4167,
+      "max": -0.4167,
+      "std": 0.0
+    },
+    "storms_evaluated": 5
+  },
+  "diagnostic_labels": {
+    "available": [
+      "observed_outage_count",
+      "observed_outage_signal",
+      "exposure_normalized_outage_intensity"
+    ],
+    "note": "These labels share the same source (observed_outage_count) as the primary label. They are provided for diagnostic comparison only, not as independent ground truth."
+  },
+  "limitations": "Storm-relative labels (storm_relative_top30_label) are derived from observed_outage_count, a per-community historical aggregate. Labels are storm-invariant across all 5 replay events. Raw outage count conflates customer density, reporting density, infrastructure complexity, and service footprint. These metrics evaluate ranking value \u2014 whether the model prioritizes communities with higher observed outage history \u2014 not outage prediction accuracy. Top-K capture and precision@K are diagnostic of rank quality, not predictive power. Spearman correlation compares predicted rank order against label-based order. Separation score measures how well the top-3 are distinguished from the rest in label space. All metrics are computed within each storm (storm-relative)."
+}

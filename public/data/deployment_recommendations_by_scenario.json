@@ -1,0 +1,1138 @@
+{
+  "fionaWindCascade": {
+    "scenario_label": "Fiona-style Wind Cascade",
+    "recommendations": [
+      {
+        "rank": 1,
+        "site_name": "Cogswell access-control point",
+        "site_id": "c07",
+        "site_type": "staging",
+        "lat": 44.6487,
+        "lon": -63.578,
+        "covered_zones": [
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.02,
+            "weighted_risk": 0.4988
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 0.6,
+            "weighted_risk": 0.4493
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.25,
+            "weighted_risk": 0.4253
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.61,
+            "weighted_risk": 0.4182
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.45,
+            "weighted_risk": 0.3818
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 0.98,
+            "weighted_risk": 0.3421
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.17,
+            "weighted_risk": 0.3385
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.5,
+            "weighted_risk": 0.3375
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.71,
+            "weighted_risk": 0.2973
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 1.01,
+            "weighted_risk": 0.269
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 1.16,
+            "weighted_risk": 0.2242
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 1.49,
+            "weighted_risk": 0.1867
+          }
+        ],
+        "covered_risk_score": 4.1687,
+        "candidate_score": 0.6803,
+        "primary_reason": "Covers high-priority risk around Cogswell District, Morris Street Edge.",
+        "recommended_action": "Pre-position mobile generator and crew support.",
+        "evidence": {
+          "critical_facilities_covered": 5.847,
+          "population_or_building_coverage": 5.0329,
+          "road_access_score": 0.3495,
+          "flood_safe_location_score": 0.3495
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 2,
+        "site_name": "Halifax Central Library area",
+        "site_id": "c01",
+        "site_type": "library",
+        "lat": 44.6421,
+        "lon": -63.5753,
+        "covered_zones": [
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.57,
+            "weighted_risk": 0.1201
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.38,
+            "weighted_risk": 0.111
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.34,
+            "weighted_risk": 0.1039
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.48,
+            "weighted_risk": 0.1034
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.59,
+            "weighted_risk": 0.1025
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1007
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.88,
+            "weighted_risk": 0.0969
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.74,
+            "weighted_risk": 0.0934
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.54,
+            "weighted_risk": 0.0924
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.13,
+            "weighted_risk": 0.084
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.87,
+            "weighted_risk": 0.0619
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.73,
+            "weighted_risk": 0.0373
+          }
+        ],
+        "covered_risk_score": 1.1076,
+        "candidate_score": 0.3378,
+        "primary_reason": "Covers high-priority risk around Spring Garden Corridor, Lower Water Street.",
+        "recommended_action": "Open charging and warming point with backup power.",
+        "evidence": {
+          "critical_facilities_covered": 1.5263,
+          "population_or_building_coverage": 1.3441,
+          "road_access_score": 0.0933,
+          "flood_safe_location_score": 0.0933
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 3,
+        "site_name": "Ferry Terminal lifeline area",
+        "site_id": "c02",
+        "site_type": "transit",
+        "lat": 44.6434,
+        "lon": -63.5682,
+        "covered_zones": [
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.05,
+            "weighted_risk": 0.1367
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1215
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.4,
+            "weighted_risk": 0.108
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.31,
+            "weighted_risk": 0.1054
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1008
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.48,
+            "weighted_risk": 0.0953
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.0,
+            "weighted_risk": 0.0942
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.74,
+            "weighted_risk": 0.0893
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 1.09,
+            "weighted_risk": 0.0815
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.96,
+            "weighted_risk": 0.0795
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 1.13,
+            "weighted_risk": 0.0497
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.93,
+            "weighted_risk": 0.026
+          }
+        ],
+        "covered_risk_score": 1.0878,
+        "candidate_score": 0.3314,
+        "primary_reason": "Covers high-priority risk around Ferry Terminal, Port Area.",
+        "recommended_action": "Keep lifeline access corridor open and support evacuation movement.",
+        "evidence": {
+          "critical_facilities_covered": 1.479,
+          "population_or_building_coverage": 1.3179,
+          "road_access_score": 0.0915,
+          "flood_safe_location_score": 0.0915
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      }
+    ]
+  },
+  "heavyRainHighTide": {
+    "scenario_label": "High Tide + Heavy Rain",
+    "recommendations": [
+      {
+        "rank": 1,
+        "site_name": "Cogswell access-control point",
+        "site_id": "c07",
+        "site_type": "staging",
+        "lat": 44.6487,
+        "lon": -63.578,
+        "covered_zones": [
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.02,
+            "weighted_risk": 0.4608
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.25,
+            "weighted_risk": 0.3956
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 0.6,
+            "weighted_risk": 0.3932
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.61,
+            "weighted_risk": 0.3643
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.45,
+            "weighted_risk": 0.3532
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.17,
+            "weighted_risk": 0.3137
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.5,
+            "weighted_risk": 0.3125
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 0.98,
+            "weighted_risk": 0.2922
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.71,
+            "weighted_risk": 0.2734
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 1.01,
+            "weighted_risk": 0.2508
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 1.16,
+            "weighted_risk": 0.2071
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 1.49,
+            "weighted_risk": 0.1605
+          }
+        ],
+        "covered_risk_score": 3.7774,
+        "candidate_score": 0.6803,
+        "primary_reason": "Covers high-priority risk around Cogswell District, Barrington Waterfront.",
+        "recommended_action": "Pre-position mobile generator and crew support.",
+        "evidence": {
+          "critical_facilities_covered": 5.847,
+          "population_or_building_coverage": 5.0329,
+          "road_access_score": 0.3495,
+          "flood_safe_location_score": 0.3495
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 2,
+        "site_name": "Halifax Central Library area",
+        "site_id": "c01",
+        "site_type": "library",
+        "lat": 44.6421,
+        "lon": -63.5753,
+        "covered_zones": [
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.57,
+            "weighted_risk": 0.1046
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.38,
+            "weighted_risk": 0.1027
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.48,
+            "weighted_risk": 0.0956
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.59,
+            "weighted_risk": 0.0955
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.34,
+            "weighted_risk": 0.0955
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.55,
+            "weighted_risk": 0.0937
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.74,
+            "weighted_risk": 0.0863
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.54,
+            "weighted_risk": 0.0855
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.88,
+            "weighted_risk": 0.0833
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.13,
+            "weighted_risk": 0.0735
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.87,
+            "weighted_risk": 0.0574
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.73,
+            "weighted_risk": 0.0319
+          }
+        ],
+        "covered_risk_score": 1.0056,
+        "candidate_score": 0.3123,
+        "primary_reason": "Covers high-priority risk around Spring Garden Corridor, Lower Water Street.",
+        "recommended_action": "Open charging and warming point with backup power.",
+        "evidence": {
+          "critical_facilities_covered": 1.5263,
+          "population_or_building_coverage": 1.3441,
+          "road_access_score": 0.0933,
+          "flood_safe_location_score": 0.0933
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 3,
+        "site_name": "Ferry Terminal lifeline area",
+        "site_id": "c02",
+        "site_type": "transit",
+        "lat": 44.6434,
+        "lon": -63.5682,
+        "covered_zones": [
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.05,
+            "weighted_risk": 0.1274
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1044
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.4,
+            "weighted_risk": 0.0998
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.31,
+            "weighted_risk": 0.0969
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.55,
+            "weighted_risk": 0.0933
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.48,
+            "weighted_risk": 0.0883
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.74,
+            "weighted_risk": 0.083
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.0,
+            "weighted_risk": 0.0824
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.96,
+            "weighted_risk": 0.0734
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 1.09,
+            "weighted_risk": 0.071
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 1.13,
+            "weighted_risk": 0.046
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.93,
+            "weighted_risk": 0.0222
+          }
+        ],
+        "covered_risk_score": 0.9882,
+        "candidate_score": 0.3065,
+        "primary_reason": "Covers high-priority risk around Ferry Terminal, Port Area.",
+        "recommended_action": "Keep lifeline access corridor open and support evacuation movement.",
+        "evidence": {
+          "critical_facilities_covered": 1.479,
+          "population_or_building_coverage": 1.3179,
+          "road_access_score": 0.0915,
+          "flood_safe_location_score": 0.0915
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      }
+    ]
+  },
+  "normal": {
+    "scenario_label": "Normal Conditions",
+    "recommendations": [
+      {
+        "rank": 1,
+        "site_name": "Cogswell access-control point",
+        "site_id": "c07",
+        "site_type": "staging",
+        "lat": 44.6487,
+        "lon": -63.578,
+        "covered_zones": [
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.02,
+            "weighted_risk": 0.359
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 0.6,
+            "weighted_risk": 0.2915
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.25,
+            "weighted_risk": 0.2661
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.61,
+            "weighted_risk": 0.2641
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.45,
+            "weighted_risk": 0.2343
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.17,
+            "weighted_risk": 0.2321
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 0.98,
+            "weighted_risk": 0.2101
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.5,
+            "weighted_risk": 0.2101
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.71,
+            "weighted_risk": 0.1771
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 1.01,
+            "weighted_risk": 0.1689
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 1.16,
+            "weighted_risk": 0.1331
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 1.49,
+            "weighted_risk": 0.1042
+          }
+        ],
+        "covered_risk_score": 2.6505,
+        "candidate_score": 0.6803,
+        "primary_reason": "Covers high-priority risk around Cogswell District, Morris Street Edge.",
+        "recommended_action": "Pre-position mobile generator and crew support.",
+        "evidence": {
+          "critical_facilities_covered": 5.847,
+          "population_or_building_coverage": 5.0329,
+          "road_access_score": 0.3495,
+          "flood_safe_location_score": 0.3495
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 2,
+        "site_name": "Halifax Central Library area",
+        "site_id": "c01",
+        "site_type": "library",
+        "lat": 44.6421,
+        "lon": -63.5753,
+        "covered_zones": [
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.57,
+            "weighted_risk": 0.0758
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.38,
+            "weighted_risk": 0.0681
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.74,
+            "weighted_risk": 0.0673
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.59,
+            "weighted_risk": 0.0643
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.55,
+            "weighted_risk": 0.063
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.34,
+            "weighted_risk": 0.0619
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.48,
+            "weighted_risk": 0.0614
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.54,
+            "weighted_risk": 0.0575
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.13,
+            "weighted_risk": 0.0545
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.88,
+            "weighted_risk": 0.054
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.87,
+            "weighted_risk": 0.0425
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.73,
+            "weighted_risk": 0.0229
+          }
+        ],
+        "covered_risk_score": 0.6933,
+        "candidate_score": 0.2342,
+        "primary_reason": "Covers high-priority risk around Spring Garden Corridor, Lower Water Street.",
+        "recommended_action": "Open charging and warming point with backup power.",
+        "evidence": {
+          "critical_facilities_covered": 1.5263,
+          "population_or_building_coverage": 1.3441,
+          "road_access_score": 0.0933,
+          "flood_safe_location_score": 0.0933
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 3,
+        "site_name": "Ferry Terminal lifeline area",
+        "site_id": "c02",
+        "site_type": "transit",
+        "lat": 44.6434,
+        "lon": -63.5682,
+        "covered_zones": [
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.05,
+            "weighted_risk": 0.0858
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.55,
+            "weighted_risk": 0.0678
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.4,
+            "weighted_risk": 0.0641
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.31,
+            "weighted_risk": 0.0628
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.55,
+            "weighted_risk": 0.0619
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.0,
+            "weighted_risk": 0.0611
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.48,
+            "weighted_risk": 0.0593
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.96,
+            "weighted_risk": 0.0572
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.74,
+            "weighted_risk": 0.0559
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 1.09,
+            "weighted_risk": 0.0515
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 1.13,
+            "weighted_risk": 0.0341
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.93,
+            "weighted_risk": 0.0159
+          }
+        ],
+        "covered_risk_score": 0.6774,
+        "candidate_score": 0.2288,
+        "primary_reason": "Covers high-priority risk around Ferry Terminal, Port Area.",
+        "recommended_action": "Keep lifeline access corridor open and support evacuation movement.",
+        "evidence": {
+          "critical_facilities_covered": 1.479,
+          "population_or_building_coverage": 1.3179,
+          "road_access_score": 0.0915,
+          "flood_safe_location_score": 0.0915
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      }
+    ]
+  },
+  "worstCascade": {
+    "scenario_label": "Worst Cascade",
+    "recommendations": [
+      {
+        "rank": 1,
+        "site_name": "Cogswell access-control point",
+        "site_id": "c07",
+        "site_type": "staging",
+        "lat": 44.6487,
+        "lon": -63.578,
+        "covered_zones": [
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.02,
+            "weighted_risk": 0.5383
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 0.6,
+            "weighted_risk": 0.4788
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.25,
+            "weighted_risk": 0.4677
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.61,
+            "weighted_risk": 0.4491
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.45,
+            "weighted_risk": 0.4201
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.17,
+            "weighted_risk": 0.3733
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.5,
+            "weighted_risk": 0.3723
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 0.98,
+            "weighted_risk": 0.3688
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.71,
+            "weighted_risk": 0.3285
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 1.01,
+            "weighted_risk": 0.2953
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 1.16,
+            "weighted_risk": 0.2443
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 1.49,
+            "weighted_risk": 0.2015
+          }
+        ],
+        "covered_risk_score": 4.538,
+        "candidate_score": 0.6803,
+        "primary_reason": "Covers high-priority risk around Cogswell District, Morris Street Edge.",
+        "recommended_action": "Pre-position mobile generator and crew support.",
+        "evidence": {
+          "critical_facilities_covered": 5.847,
+          "population_or_building_coverage": 5.0329,
+          "road_access_score": 0.3495,
+          "flood_safe_location_score": 0.3495
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 2,
+        "site_name": "Halifax Central Library area",
+        "site_id": "c01",
+        "site_type": "library",
+        "lat": 44.6421,
+        "lon": -63.5753,
+        "covered_zones": [
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 0.57,
+            "weighted_risk": 0.1289
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.38,
+            "weighted_risk": 0.1222
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.34,
+            "weighted_risk": 0.1148
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.48,
+            "weighted_risk": 0.1127
+          },
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.59,
+            "weighted_risk": 0.1125
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1108
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.88,
+            "weighted_risk": 0.1046
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.54,
+            "weighted_risk": 0.1019
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.74,
+            "weighted_risk": 0.1008
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.13,
+            "weighted_risk": 0.0895
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 0.87,
+            "weighted_risk": 0.0683
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.73,
+            "weighted_risk": 0.0402
+          }
+        ],
+        "covered_risk_score": 1.2072,
+        "candidate_score": 0.3627,
+        "primary_reason": "Covers high-priority risk around Spring Garden Corridor, Lower Water Street.",
+        "recommended_action": "Open charging and warming point with backup power.",
+        "evidence": {
+          "critical_facilities_covered": 1.5263,
+          "population_or_building_coverage": 1.3441,
+          "road_access_score": 0.0933,
+          "flood_safe_location_score": 0.0933
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      },
+      {
+        "rank": 3,
+        "site_name": "Ferry Terminal lifeline area",
+        "site_id": "c02",
+        "site_type": "transit",
+        "lat": 44.6434,
+        "lon": -63.5682,
+        "covered_zones": [
+          {
+            "zone_id": "zone-07",
+            "zone_name": "Ferry Terminal",
+            "distance_km": 0.05,
+            "weighted_risk": 0.15
+          },
+          {
+            "zone_id": "zone-11",
+            "zone_name": "Port Area",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1311
+          },
+          {
+            "zone_id": "zone-05",
+            "zone_name": "South End Waterfront",
+            "distance_km": 0.4,
+            "weighted_risk": 0.1177
+          },
+          {
+            "zone_id": "zone-03",
+            "zone_name": "Bishop's Landing",
+            "distance_km": 0.31,
+            "weighted_risk": 0.1165
+          },
+          {
+            "zone_id": "zone-02",
+            "zone_name": "Lower Water Street",
+            "distance_km": 0.55,
+            "weighted_risk": 0.1109
+          },
+          {
+            "zone_id": "zone-06",
+            "zone_name": "Historic Properties",
+            "distance_km": 0.48,
+            "weighted_risk": 0.1052
+          },
+          {
+            "zone_id": "zone-12",
+            "zone_name": "Morris Street Edge",
+            "distance_km": 1.0,
+            "weighted_risk": 0.1003
+          },
+          {
+            "zone_id": "zone-01",
+            "zone_name": "Barrington Waterfront",
+            "distance_km": 0.74,
+            "weighted_risk": 0.0982
+          },
+          {
+            "zone_id": "zone-08",
+            "zone_name": "Spring Garden Corridor",
+            "distance_km": 1.09,
+            "weighted_risk": 0.0875
+          },
+          {
+            "zone_id": "zone-04",
+            "zone_name": "Cogswell District",
+            "distance_km": 0.96,
+            "weighted_risk": 0.0858
+          },
+          {
+            "zone_id": "zone-09",
+            "zone_name": "Citadel Slope",
+            "distance_km": 1.13,
+            "weighted_risk": 0.0548
+          },
+          {
+            "zone_id": "zone-10",
+            "zone_name": "North End Connector",
+            "distance_km": 1.93,
+            "weighted_risk": 0.028
+          }
+        ],
+        "covered_risk_score": 1.186,
+        "candidate_score": 0.3559,
+        "primary_reason": "Covers high-priority risk around Ferry Terminal, Port Area.",
+        "recommended_action": "Keep lifeline access corridor open and support evacuation movement.",
+        "evidence": {
+          "critical_facilities_covered": 1.479,
+          "population_or_building_coverage": 1.3179,
+          "road_access_score": 0.0915,
+          "flood_safe_location_score": 0.0915
+        },
+        "limitations": "Candidate sites are demo-friendly proxies until audited facility and shelter datasets are joined."
+      }
+    ]
+  }
+}

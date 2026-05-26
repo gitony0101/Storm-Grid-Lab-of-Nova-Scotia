@@ -1,0 +1,24 @@
+{
+  "generated_at": "2026-05-25",
+  "audit_verdict": "portfolio_clean_summary",
+  "active_engine": "src/engine/communityRiskEngine.ts",
+  "default_weights_verified": {
+    "community_hazard": 0.4,
+    "vulnerability": 0.25,
+    "historical_prior": 0.2,
+    "wind_tree": 0.1,
+    "rain_lowland": 0.05
+  },
+  "summary": [
+    "The public portfolio export includes the transparent HRM community response-priority scoring path.",
+    "Formula and weight parity are checked by scripts/numerical_parity_check.py.",
+    "Restricted diagnostic experiment outputs were excluded from the public export.",
+    "Validation evidence should be described as ranking-oriented replay evidence, not operational proof."
+  ],
+  "limitations": [
+    "Community geometry uses centroid proxies unless official polygons are integrated.",
+    "Some features are seed or derived proxies.",
+    "Replay validation may contain same-source bias where historical prior and observed replay labels share source material.",
+    "Advanced ML experiments are not part of the public production demo path."
+  ]
+}

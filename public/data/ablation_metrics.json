@@ -1,0 +1,17 @@
+{
+  "model_version": "stormgrid-sparse-v1.0.0",
+  "generated_at": "2024-05-19T13:09:43.485721+00:00",
+  "diagnostic_only": true,
+  "ablation_metrics": {
+    "full_evidence_graph": {
+      "top3_capture": 1.0,
+      "top5_capture": 0.92,
+      "precision_at_3": 1.0,
+      "ndcg_at_5": 0.9475,
+      "spearman_rank_correlation": 0.7536,
+      "separation_score": 0.8333,
+      "stability_score": 1.0
+    }
+  },
+  "limitations": "StormGrid output is response priority, not outage probability. This is a triage ranking model for HRM communities under sparse data, not household outage prediction, pole-level failure prediction, or a validated Nova Scotia province-wide production model. Historical prior and observed replay labels may share the same outage source, creating same-source bias. Top-K validation is replay ranking evidence, not proof of future outage prediction accuracy. Vulnerability features may include seeded proxy values and storm replay values may be scenario approximations."
+}

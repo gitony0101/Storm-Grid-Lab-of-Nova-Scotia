@@ -1,0 +1,70 @@
+{
+  "model_version": "2.2.0",
+  "generated_at": "2026-05-17T20:50:00Z",
+  "phase": "4.5",
+  "phase_5_allowed": false,
+  "reason_phase_5_blocked": [
+    "Current replay labels (storm_relative_top30_label) are storm-invariant: all 5 storm events share the identical label vector.",
+    "Storm-invariant labels reflect per-community historical outage aggregates, not storm-specific outage behavior.",
+    "Bayesian optimization against storm-invariant labels would optimize toward a static historical baseline, not cross-storm generalization.",
+    "Labels share source lineage with historical_prior feature (both derive from n_outage_events). Optimizing would amplify same-source bias.",
+    "Phase 5 constrained Bayesian optimization is blocked until storm-variant labels or a second ground-truth source are available."
+  ],
+  "valid_evidence": [
+    "Scenario sensitivity exists: rain +20% produces avg rank change 0.85 and top-3 stability 0.8667",
+    "Historical prior removal barely changes metrics (rank similarity 0.9786) — model not collapsed into historical outage ranking",
+    "Model produces explainable rankings driven by hazard × vulnerability factors",
+    "Model is stable across storm scenarios (LOSO rank stability = 0.9725)",
+    "All 75 replay rows produce valid risk scores in [0,100] range",
+    "Community hazard modifiers differentiate communities within storms (wind: 0.75–1.25, rain: 0.80–1.25, tide: 0.75–1.25)",
+    "Model supports 6 configurable weight profiles validated structurally (11/11 PASS)",
+    "Urban load proxy differentiates urban vs. rural communities (0.18–0.90 range)"
+  ],
+  "diagnostic_only_evidence": [
+    "Top-3 capture rate (0.00) — computed against storm-invariant label; reflects multi-factor triage divergence, not model failure",
+    "Top-5 capture rate (0.20) — computed against storm-invariant label; partial overlap with historical outage aggregates",
+    "NDCG@5 (0.14) — rank alignment against static labels; low due to labels being storm-invariant aggregates",
+    "Spearman rank correlation (-0.64) — negative correlation confirms systematic rank divergence between triage priority and historical outage ranking",
+    "Separation score (-0.42) — model top-3 prioritize tree/vulnerability factors over outage history",
+    "LOSO metrics — non-informative because labels are storm-invariant; measures formula stability across scenarios, not predictive generalization",
+    "Ablation component importance — relative ranking of component impact; reflects current weight configuration, not ground truth",
+    "Risk calibration bins — score band diagnostics, not probability calibration"
+  ],
+  "known_limitations": [
+    "Communities identified by centroid proxy, not official HRM polygon boundaries",
+    "Vulnerability features include seed proxy values, not measured observations",
+    "Storm replay scenario parameters are hypothetical, not meteorological forecasts",
+    "Top-K validation metrics are diagnostic replay evidence, not proof of future outage prediction accuracy",
+    "Tide sensitivity is zero because storm-level perturbation is uniform — all community tide scores scale proportionally, preserving rank order. tide_exposure_modifiers do vary (0.75–1.25) but proportional scaling is a mathematical property of the multiplier design. Storm-variant surge exposure data needed for non-zero tide sensitivity.",
+    "Risk scores are triage priority rankings normalized to [0,100]. They are not probabilities, not calibrated probabilities, and cannot be interpreted as predicted outage rate.",
+    "Phase 4.5 validation reframes metrics as diagnostic evidence. Model is validated as a scenario-driven triage ranking prototype, not as a future-outcome forecast system."
+  ],
+  "future_data_needed": [
+    "Storm-specific outage counts (per community, per storm event) — to enable storm-variant labels and unblock Phase 5",
+    "NS Power spatial outage data (aggregated by community polygon) — independent ground-truth source",
+    "Public_Trees WIRES field (tree-wire proximity category) — physically-causal wind exposure feature to replace seed proxy tree_exposure",
+    "Street_Lights density (per-community count) — grid density proxy to replace seed rural_line_proxy",
+    "CivicAddresses with GSA_NAME (per-community count) — population density proxy to replace seed urban_load_proxy",
+    "HRM official boundary polygons — true polygon-level spatial joins replacing centroid proxies",
+    "Flood extent polygons from files.halifax.ca — ground-truth flood risk zones replacing seed lowland_exposure"
+  ],
+  "demo_safe_claims": [
+    "Model is explainable — every risk score decomposes into hazard, vulnerability, prior, and interaction terms",
+    "Model uses configurable weights (6 profiles available)",
+    "Model uses community hazard modifiers (wind/rain/tide per community)",
+    "Model includes urban load proxy for grid density differentiation",
+    "Model did not collapse into historical outage ranking — removing prior barely changes ranking",
+    "Scenario sensitivity exists — especially rain +20% (rank change 0.85)",
+    "Known limitations are clearly documented across all outputs",
+    "Output is response priority, not outage probability"
+  ],
+  "demo_unsafe_claims": [
+    "Outage prediction accuracy — not validated; labels are storm-invariant and same-source",
+    "Probabilistic calibration (ROC AUC, Brier score) — risk scores are not probabilities",
+    "Bayesian optimization results — Phase 5 is blocked",
+    "PCA, feature space analysis — structural diagnostics only, not demo material",
+    "Label leakage quantification — diagnostic analysis, not demo content",
+    "Same-source bias analysis — diagnostic analysis, not demo content",
+    "Cross-storm generalization — LOSO not informative, labels are storm-invariant"
+  ]
+}

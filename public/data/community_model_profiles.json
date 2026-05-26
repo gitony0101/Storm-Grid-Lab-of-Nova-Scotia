@@ -1,0 +1,79 @@
+{
+  "profiles": {
+    "Bedford": {
+      "profile_id": "urban_load",
+      "local_weight_override_allowed": true,
+      "notes": "Dense urban core with mixed residential/commercial infrastructure; benefit from higher hazard weighting."
+    },
+    "Beechville": {
+      "profile_id": "tree_suburban",
+      "local_weight_override_allowed": true,
+      "notes": "Suburban area with notable tree canopy; higher wind-tree interaction risk."
+    },
+    "Lower Sackville": {
+      "profile_id": "default",
+      "local_weight_override_allowed": true,
+      "notes": "Mixed suburban/lowland characteristics; default profile weights are a good fit."
+    },
+    "Dartmouth": {
+      "profile_id": "urban_load",
+      "local_weight_override_allowed": true,
+      "notes": "Urban harbour community with dense infrastructure and mixed risk factors."
+    },
+    "Downtown Halifax": {
+      "profile_id": "urban_load",
+      "local_weight_override_allowed": true,
+      "notes": "Highest-density urban area; hazard exposure dominates with critical infrastructure concentration."
+    },
+    "Clayton Park": {
+      "profile_id": "default",
+      "local_weight_override_allowed": true,
+      "notes": "Established suburban neighbourhood; default weights appropriate."
+    },
+    "Timberlea": {
+      "profile_id": "tree_suburban",
+      "local_weight_override_allowed": true,
+      "notes": "Tree-lined suburban community; elevated wind-tree interaction risk."
+    },
+    "Cole Harbour": {
+      "profile_id": "coastal",
+      "local_weight_override_allowed": true,
+      "notes": "Coastal harbour community with lowland and wind-tree exposure; higher historical prior for sparse outage data."
+    },
+    "Spryfield": {
+      "profile_id": "default",
+      "local_weight_override_allowed": true,
+      "notes": "Mixed urban-rural fringe with lowland areas; default profile is suitable."
+    },
+    "Eastern Passage": {
+      "profile_id": "coastal",
+      "local_weight_override_allowed": true,
+      "notes": "Coastal community on Eastern Shore; rain/lowland and historical data contribute significantly."
+    },
+    "Fall River": {
+      "profile_id": "tree_suburban",
+      "local_weight_override_allowed": true,
+      "notes": "Forest-adjacent suburban community; notable wind-tree risk along power corridors."
+    },
+    "Hammonds Plains": {
+      "profile_id": "tree_suburban",
+      "local_weight_override_allowed": true,
+      "notes": "Wooded suburban area with legacy overhead lines; tree exposure elevated."
+    },
+    "Sambro": {
+      "profile_id": "coastal",
+      "local_weight_override_allowed": true,
+      "notes": "Coastal fishing village at harbour entrance; high exposure to coastal storm factors."
+    },
+    "Tantallon": {
+      "profile_id": "tree_suburban",
+      "local_weight_override_allowed": true,
+      "notes": "Suburban fringe with significant tree cover and overhead infrastructure."
+    },
+    "Musquodoboit Harbour": {
+      "profile_id": "coastal",
+      "local_weight_override_allowed": true,
+      "notes": "Rural coastal harbour; limited outage history increases historical prior importance."
+    }
+  }
+}

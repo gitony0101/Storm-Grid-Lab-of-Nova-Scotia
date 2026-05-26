@@ -1,0 +1,80 @@
+{
+  "model_version": "ns-province-sparse-triage-v1.0.0",
+  "description": "Province-scale sparse-data response-priority ranking weights.",
+  "profiles": {
+    "default": {
+      "community_hazard": 0.4,
+      "vulnerability": 0.25,
+      "historical_prior": 0.2,
+      "wind_tree": 0.1,
+      "rain_lowland": 0.05
+    },
+    "urban_load": {
+      "community_hazard": 0.43,
+      "vulnerability": 0.25,
+      "historical_prior": 0.18,
+      "wind_tree": 0.09,
+      "rain_lowland": 0.05
+    },
+    "tree_suburban": {
+      "community_hazard": 0.38,
+      "vulnerability": 0.22,
+      "historical_prior": 0.18,
+      "wind_tree": 0.16,
+      "rain_lowland": 0.06
+    },
+    "coastal": {
+      "community_hazard": 0.39,
+      "vulnerability": 0.22,
+      "historical_prior": 0.19,
+      "wind_tree": 0.1,
+      "rain_lowland": 0.1
+    },
+    "lowland": {
+      "community_hazard": 0.38,
+      "vulnerability": 0.23,
+      "historical_prior": 0.18,
+      "wind_tree": 0.09,
+      "rain_lowland": 0.12
+    },
+    "rural_line": {
+      "community_hazard": 0.39,
+      "vulnerability": 0.24,
+      "historical_prior": 0.17,
+      "wind_tree": 0.15,
+      "rain_lowland": 0.05
+    },
+    "historical_context_full_v1": {
+      "inherits_from": "legacy_profiles",
+      "status": "diagnostic_only",
+      "prior_contamination_risk": true,
+      "description": "Legacy historical-context profiles are retained for diagnostics and context only."
+    },
+    "no_prior_triage_v1": {
+      "community_hazard": 0.5,
+      "vulnerability": 0.25,
+      "wind_tree": 0.15,
+      "rain_lowland": 0.05,
+      "coastal_tide": 0.05,
+      "historical_prior": 0.0,
+      "status": "candidate_pending_human_review",
+      "prior_contamination_risk": false,
+      "description": "Clean validation candidate that excludes historical_prior from rank score."
+    }
+  },
+  "constraints": {
+    "historical_prior_max": 0.3,
+    "community_hazard_min_vs_prior": true,
+    "wind_tree_min_vs_rain": false,
+    "no_single_weight_gt": 0.5,
+    "shrinkage_k": 20
+  },
+  "baseline_default_profile": "default",
+  "limitation_text": "StormGrid ranks communities for storm response priority under sparse data. StormGrid output is response priority, not outage probability. Community geometry is centroid proxy unless official polygons are available. Top-K validation is replay ranking evidence, not proof of future outage prediction accuracy. Proxy features are marked as measured, derived, seed proxy, or scenario approximation.",
+  "ml5d_prior_demotion": {
+    "accepted_clean_validation_candidate": "no_prior_triage_v1",
+    "production_update_allowed": false,
+    "historical_prior_policy": "context_only_not_primary_ranking_driver",
+    "updated_at": "2026-05-19T19:25:33.281757+00:00"
+  }
+}

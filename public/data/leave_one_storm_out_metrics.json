@@ -1,0 +1,176 @@
+{
+  "model_version": "2.2.0",
+  "generated_at": "2026-05-17T23:37:36Z",
+  "diagnostic_only": true,
+  "loso_is_informative": false,
+  "reason": "storm_relative_top30_label is storm-invariant (identical across all 5 storms). Traditional LOSO evaluates label generalization across splits; with invariant labels this degenerates to measuring rank stability across storm scenarios. LOSO results confirm the model produces consistent rankings regardless of which storm is held out, but this reflects formula determinism, not label generalization. Predicted rank stability (avg pairwise Spearman across storms): 0.9725. LOSO is diagnostic only.",
+  "label_order_identical_across_storms": true,
+  "num_storms": 5,
+  "full_set_metrics": {
+    "top3_capture_rate": 0.0,
+    "top3_hits": 0,
+    "top5_capture_rate": 0.0,
+    "top5_hits": 0,
+    "ndcg_at_5": 0.0,
+    "spearman_rank": -0.6103
+  },
+  "average_rank_stability_across_storms": 0.9725,
+  "loso_results": {
+    "coastal-nor-easter-2021": {
+      "held_in_storms": [
+        "post-tropical-derry-2019",
+        "post-tropical-fiona-2023",
+        "summer-squall-2022",
+        "winter-storm-2024"
+      ],
+      "held_out_storm": "coastal-nor-easter-2021",
+      "held_in_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.0,
+        "top5_hits": 0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.6076
+      },
+      "held_out_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.2,
+        "top5_hits": 1,
+        "ndcg_at_5": 0.1461,
+        "spearman_rank": -0.6071
+      },
+      "delta_from_full": {
+        "top3_capture_rate": 0.0,
+        "top5_capture_rate": 0.0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": 0.0027
+      }
+    },
+    "post-tropical-derry-2019": {
+      "held_in_storms": [
+        "coastal-nor-easter-2021",
+        "post-tropical-fiona-2023",
+        "summer-squall-2022",
+        "winter-storm-2024"
+      ],
+      "held_out_storm": "post-tropical-derry-2019",
+      "held_in_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.0,
+        "top5_hits": 0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.5933
+      },
+      "held_out_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.2,
+        "top5_hits": 1,
+        "ndcg_at_5": 0.1461,
+        "spearman_rank": -0.6357
+      },
+      "delta_from_full": {
+        "top3_capture_rate": 0.0,
+        "top5_capture_rate": 0.0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": 0.017
+      }
+    },
+    "post-tropical-fiona-2023": {
+      "held_in_storms": [
+        "coastal-nor-easter-2021",
+        "post-tropical-derry-2019",
+        "summer-squall-2022",
+        "winter-storm-2024"
+      ],
+      "held_out_storm": "post-tropical-fiona-2023",
+      "held_in_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.0,
+        "top5_hits": 0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.6147
+      },
+      "held_out_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.2,
+        "top5_hits": 1,
+        "ndcg_at_5": 0.1461,
+        "spearman_rank": -0.6071
+      },
+      "delta_from_full": {
+        "top3_capture_rate": 0.0,
+        "top5_capture_rate": 0.0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.0044
+      }
+    },
+    "summer-squall-2022": {
+      "held_in_storms": [
+        "coastal-nor-easter-2021",
+        "post-tropical-derry-2019",
+        "post-tropical-fiona-2023",
+        "winter-storm-2024"
+      ],
+      "held_out_storm": "summer-squall-2022",
+      "held_in_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.0,
+        "top5_hits": 0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.6589
+      },
+      "held_out_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.2,
+        "top5_hits": 1,
+        "ndcg_at_5": 0.1312,
+        "spearman_rank": -0.7036
+      },
+      "delta_from_full": {
+        "top3_capture_rate": 0.0,
+        "top5_capture_rate": 0.0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.0486
+      }
+    },
+    "winter-storm-2024": {
+      "held_in_storms": [
+        "coastal-nor-easter-2021",
+        "post-tropical-derry-2019",
+        "post-tropical-fiona-2023",
+        "summer-squall-2022"
+      ],
+      "held_out_storm": "winter-storm-2024",
+      "held_in_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.0,
+        "top5_hits": 0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.6431
+      },
+      "held_out_metrics": {
+        "top3_capture_rate": 0.0,
+        "top3_hits": 0,
+        "top5_capture_rate": 0.2,
+        "top5_hits": 1,
+        "ndcg_at_5": 0.1461,
+        "spearman_rank": -0.6286
+      },
+      "delta_from_full": {
+        "top3_capture_rate": 0.0,
+        "top5_capture_rate": 0.0,
+        "ndcg_at_5": 0.0,
+        "spearman_rank": -0.0328
+      }
+    }
+  },
+  "limitations": "Leave-one-storm-out validation is diagnostic only. storm_relative_top30_label is storm-invariant (derived from historical aggregate observed_outage_count). Per-storm outage decomposition is needed for ground-truth LOSO evaluation. The model is formula-based (no training step), so LOSO measures rank stability across storm scenarios, not generalization performance."
+}

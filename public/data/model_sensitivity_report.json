@@ -1,0 +1,11 @@
+{
+  "model_version": "stormgrid-sparse-v1.0.0",
+  "generated_at": "2024-05-19T13:09:43.485721+00:00",
+  "diagnostic_only": true,
+  "sensitivity_summary": {
+    "baseline_vs_evidence_top3_delta": 0.0,
+    "baseline_vs_evidence_ndcg5_delta": 0.0525,
+    "interpretation": "Small-sample ranking sensitivity only; not predictive accuracy."
+  },
+  "limitation": "StormGrid output is response priority, not outage probability. Community geometry is centroid proxy, not official polygon boundary. Top-K validation is ranking evidence, not proof of future outage prediction accuracy."
+}

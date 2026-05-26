@@ -1,0 +1,114 @@
+{
+  "model_version": "2.2.0",
+  "description": "Community-specific hazard exposure modifiers for wind, rain, and tide sub-scores",
+  "applied_as": "community_wind = storm_wind * wind_exposure_modifier; community_rain = storm_rain * rain_exposure_modifier; community_tide = storm_tide * tide_exposure_modifier; community_hazard = mean(community_wind, community_rain, community_tide)",
+  "generated_at": "2026-07-01T00:00:00Z",
+  "limitation_text": "Community centroid proxy, not official polygon boundary. StormGrid output is response priority, not outage probability. Modifier values are derived_proxy (seeded from community features), not measured GIS wind/rain/tide exposure.",
+  "modifiers": {
+    "Bedford": {
+      "wind_exposure_modifier": 0.9,
+      "rain_exposure_modifier": 1.04,
+      "tide_exposure_modifier": 0.75,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Beechville": {
+      "wind_exposure_modifier": 1.07,
+      "rain_exposure_modifier": 0.96,
+      "tide_exposure_modifier": 1.0,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Lower Sackville": {
+      "wind_exposure_modifier": 0.93,
+      "rain_exposure_modifier": 1.12,
+      "tide_exposure_modifier": 0.75,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Dartmouth": {
+      "wind_exposure_modifier": 1.02,
+      "rain_exposure_modifier": 1.04,
+      "tide_exposure_modifier": 1.06,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Downtown Halifax": {
+      "wind_exposure_modifier": 0.98,
+      "rain_exposure_modifier": 0.96,
+      "tide_exposure_modifier": 1.09,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Clayton Park": {
+      "wind_exposure_modifier": 0.75,
+      "rain_exposure_modifier": 0.8,
+      "tide_exposure_modifier": 0.75,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Timberlea": {
+      "wind_exposure_modifier": 1.1,
+      "rain_exposure_modifier": 1.04,
+      "tide_exposure_modifier": 1.03,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Cole Harbour": {
+      "wind_exposure_modifier": 1.07,
+      "rain_exposure_modifier": 0.96,
+      "tide_exposure_modifier": 1.03,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Spryfield": {
+      "wind_exposure_modifier": 1.15,
+      "rain_exposure_modifier": 1.12,
+      "tide_exposure_modifier": 1.06,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Eastern Passage": {
+      "wind_exposure_modifier": 1.15,
+      "rain_exposure_modifier": 1.04,
+      "tide_exposure_modifier": 1.16,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Fall River": {
+      "wind_exposure_modifier": 1.0,
+      "rain_exposure_modifier": 1.2,
+      "tide_exposure_modifier": 0.75,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Hammonds Plains": {
+      "wind_exposure_modifier": 0.98,
+      "rain_exposure_modifier": 1.12,
+      "tide_exposure_modifier": 0.75,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Sambro": {
+      "wind_exposure_modifier": 1.25,
+      "rain_exposure_modifier": 1.04,
+      "tide_exposure_modifier": 1.25,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Tantallon": {
+      "wind_exposure_modifier": 1.25,
+      "rain_exposure_modifier": 0.96,
+      "tide_exposure_modifier": 1.12,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    },
+    "Musquodoboit Harbour": {
+      "wind_exposure_modifier": 1.25,
+      "rain_exposure_modifier": 1.04,
+      "tide_exposure_modifier": 1.16,
+      "modifier_source": "derived_proxy",
+      "modifier_notes": "Wind from tree+coastal proxies; Rain from lowland proxy; Tide from coastal proxy. Not measured GIS."
+    }
+  }
+}
