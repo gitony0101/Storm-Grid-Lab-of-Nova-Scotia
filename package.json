@@ -1,8 +1,14 @@
 {
-  "name": "harbourguard",
+  "name": "storm-grid-lab-of-nova-scotia",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "description": "Explainable storm-response triage prototype for community priority ranking under sparse public data.",
+  "homepage": "https://github.com/gitony0101/Storm-Grid-Lab-of-Nova-Scotia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gitony0101/Storm-Grid-Lab-of-Nova-Scotia.git"
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
